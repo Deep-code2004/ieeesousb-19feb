@@ -1,0 +1,7 @@
+{
+  "name": "Gemini Geo-Explorer",
+  "description": "An interactive map application powered by Gemini. Search for events, cafes, and landmarks to see them instantly pinned on the map with details.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
