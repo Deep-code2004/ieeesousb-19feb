@@ -1,0 +1,5 @@
+- [x] Add new state variable `showDeliveryBoyForm` (boolean) in MerchantDashboard component
+- [x] Add "Add Delivery Boy" button next to existing "Add Delivery Person" button in delivery tab
+- [x] Create new DeliveryBoyForm component with fields: name, email, phone, image upload
+- [x] Implement form submission logic to call handleAddDeliveryPerson with vehicle and licensePlate as empty strings
+- [x] Add conditional rendering for DeliveryBoyForm when showDeliveryBoyForm is true

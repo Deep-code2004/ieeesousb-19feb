@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NextGen Commerce</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#0f172a', // Dark blue-gray
+              secondary: '#1e293b', // Lighter dark blue-gray
+              accent: {
+                DEFAULT: '#06b6d4', // Cyan
+                hover: '#0891b2', // Darker Cyan
+              },
+              // Card colors from screenshot
+              'card-cyan': '#22d3ee',
+              'card-blue': '#3b82f6',
+              'card-green': '#22c55e',
+              'card-orange': '#f97316',
+              'card-red': '#ef4444',
+              'card-purple': '#8b5cf6',
+            },
+            keyframes: {
+              'badge-pop': {
+                '0%, 100%': { transform: 'scale(1)' },
+                '30%': { transform: 'scale(1.4)' },
+              },
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              }
+            },
+            animation: {
+              'badge-pop': 'badge-pop 0.5s ease-out',
+              'fade-in': 'fade-in 0.3s ease-out',
+            }
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.24.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-primary text-gray-200">
+    <div id="root"></div>
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
